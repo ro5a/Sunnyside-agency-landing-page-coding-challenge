@@ -1,0 +1,469 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    
+    box-sizing: border-box;
+    text-decoration: none;
+   
+    border: none;
+    outline: none;
+
+}
+@font-face {
+    font-family:francesbold;
+    src: url(../fonts/Fraunces-Bold.ttf);
+}
+    @font-face {
+        font-family: Barlow;
+        src: url(../fonts/Barlow-SemiBold.ttf);
+    }
+    @font-face {
+    font-family: blackfrance;
+    src: url(../fonts/Fraunces-Black.ttf);
+  }
+
+.pages ul li{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+/* On screens that are 1440px or less,  */
+@media screen and (max-width: 1440px) {
+    .aside{
+      display: flex;
+    }
+  }
+  
+  /* On screens that are 600px or less, */
+  @media screen and (max-width: 700px) {
+    .aside{
+      display: none;
+    }
+    header .aside.active
+    {
+        color:hsl(232, 10%, 55%) ;
+        position: absolute;
+        top: 100%;
+        right: 18px;
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        background: #fff;
+        z-index: 9;
+        padding: 20px 0;
+    }
+    header .aside.active::before
+    {
+        content: "";
+        position: absolute;
+        border-width: 10px;
+        border-style: solid;
+        border-color: transparent #fff #fff transparent;
+        background: hsl(0, 0%, 100%);
+        top: -20px;
+        right: 0;
+    }
+    
+    
+  }
+  
+
+
+
+header{
+   
+    background-image: url(../images/desktop/image-header.jpg);
+    background-repeat: no-repeat;
+    
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    height: 650px;
+}
+
+@media(max-width:675px)
+{
+    header
+    {
+        background-image: url(../images/mobile/image-header.jpg);
+      
+
+    }
+
+}
+header nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: relative;
+    color: white;
+    font-family: Barlow;
+    margin:  0px 50px ;
+    padding-top: 40px;
+   
+}
+header .logo-text{
+    font-size: 18px;
+    
+    
+ 
+    
+}
+
+header nav ul {
+    display: flex;
+  
+}
+header nav ul li{
+    margin:10px 20px;
+    color: #fff;
+}
+header nav ul a:hover{
+    background-color: #72d3ff;
+    border-radius: 20px  ;
+    text-transform: uppercase;
+    
+}
+
+@media(max-width:675px)
+{
+   
+    header nav ul  li
+    {
+        
+        color: hsl(232, 10%, 55%) !important;
+       
+
+    }
+    header nav ul  a:hover
+    {
+        text-transform: uppercase;
+        color: hsl(212, 27%, 19%);
+        background: hsl(51, 100%, 49%);
+        margin: auto;
+    }
+
+}
+
+header .bar
+{
+    width: 30px;
+    height: 30px;
+    display: inline-flex;
+    align-items: center;
+    color: #fff;
+    display: none;
+}
+.header .bar svg
+{
+    font-size: 30px;
+
+}
+@media(max-width:675px)
+{
+    header .bar
+    {
+        display: inline-flex;
+      
+
+    }
+
+}
+
+header .text{
+    
+    text-align: center;
+    text-transform: uppercase;
+}
+header .text p{
+    color: #fff;
+    font-family:francesbold;
+    font-size: 50px;
+    margin-top: 70px;
+    letter-spacing: 10px;
+    
+
+}
+@media(max-width:675px)
+{
+    header .text p
+    {
+        font-size: 18px;
+    }
+
+}
+header .text .arrow{
+    margin-top: 70px;
+
+}
+@media(max-width:675px)
+{
+    header .text .arrow{
+        margin-top: 180px;
+        
+    }
+}
+.section1{
+    display: flex;
+    flex-wrap: wrap;
+}
+.section1 .texxt{
+    
+    padding: 40px 0px 40px 40px;
+    margin: auto;
+}
+.section1 .texxt h2{
+    font-family:francesbold;
+    color: hsl(212, 27%, 19%);
+   
+    
+
+}
+.section1 .texxt p{
+    font-family: Barlow;
+    color: hsl(232, 10%, 55%);
+    line-height: 1.8;
+}
+.section1 .texxt a{
+    font-family:francesbold;
+    color: hsl(212, 27%, 19%);
+    text-transform: uppercase;
+    
+    border-bottom:5px solid hsl(51, 100%, 49%) ;
+    
+    
+
+}
+.section1 img{
+    width: 632px;
+    height: auto;
+   
+}
+@media(max-width:675px)
+{
+    .section1 img{
+        width:100% ;
+        height: auto;
+        
+    }
+}
+
+@media(max-width:675px)
+{
+    .brand
+    {
+        flex-direction: column;
+    }
+    .brand .texxt,
+    .brand .texxt
+    {
+        order: 2;
+        text-align: center;
+    }
+    .brand .section1 img
+    {
+        order: 1;
+        
+    }
+    
+
+}
+.section2{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.section2 .texxt{
+    padding: 40px 0px 40px 40px;
+    margin: auto;
+}
+.section2 .texxt h2{
+    font-family:francesbold;
+    color: hsl(212, 27%, 19%);
+   
+}
+.section2 .texxt p{
+    font-family: Barlow;
+    color: hsl(232, 10%, 55%);
+    line-height: 1.8;
+}
+.section2 .texxt a{
+    font-family:francesbold;
+    color: hsl(212, 27%, 19%);
+    text-transform: uppercase;
+    
+    border-bottom:5px solid hsl(7, 99%, 70%);
+    
+    
+
+}
+
+.section2 img{
+    width: 632px;
+    height: auto;
+   
+
+}
+@media(max-width:675px)
+{
+    .section2 img{
+        width:100% ;
+        height: auto;
+        
+    }
+}
+.section3 img{
+    width: 632px;
+    height: auto;
+}
+.section3{
+    display: flex;
+    align-items: center;
+}
+.section3 .photo2{
+    position: relative;
+}
+@media(max-width:675px)
+{
+    .section3
+    {
+        flex-direction: column;
+    }
+}
+.center {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+    padding: 50px;
+    color:hsl(167, 40%, 24%);
+  }
+  .center h2{
+    font-family:francesbold;
+  }
+  .center p{
+    font-family: Barlow;
+    line-height: 1.8;
+  }
+  .center2{
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+    padding: 50px;
+    color: hsl(198, 62%, 26%);
+   
+  }
+  .center2 h2{
+    font-family:francesbold;
+  }
+  .center2 p{
+    font-family: Barlow;
+    line-height: 1.8;
+  }
+  .client .p-md{
+text-align: center;
+padding: 50px;
+color:hsl(232, 10%, 55%);
+letter-spacing: 10px;
+  }
+  .container{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding-bottom: 50px;
+      
+
+  }
+  .person{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 20px;
+      align-items: center;
+      
+  }
+  .container img{
+      width: 50px;
+      border-radius: 50%;
+  }
+  .person p{
+      text-align: center;
+      
+  }
+  .person .fun{
+      
+    font-family: Barlow;
+    color: hsl(213, 9%, 39%);
+    line-height: 1.8;
+
+  }
+  .person strong{
+    font-family: blackfrance;
+  }
+  .person .sec{
+    color:hsl(210, 4%, 67%);
+    font-family: Barlow;
+    line-height: 1.8;
+  }
+  .imgeas{
+      display: flex;
+      flex-wrap: wrap;
+      
+  }
+  .allimage img{
+      width:315px ;
+      height: auto;
+      
+  }
+  @media(max-width:675px)
+{
+    .allimage img{
+        width:100% ;
+        height: auto;
+        
+    }
+}
+  footer{
+      background-color: #90d4c5;
+      
+      
+  }
+  footer h2{
+      color:hsl(167, 40%, 24%);
+      text-align: center;
+      font-weight: 500px;
+    font-family: Barlow;
+    padding: 20px;
+  }
+  footer ul{
+      display: flex;
+      justify-content: center;
+      list-style: none;
+  }
+  footer ul li{
+      margin:20px;
+      color:hsl(167, 40%, 24%) ;
+      
+    font-family: Barlow;
+  }
+  footer ul li:hover{
+      color:hsl(0, 0%, 100%) ;
+  }
+  .socail-media{
+      display: flex;
+      justify-content: center;
+     
+  }
+  .socail-media img{
+    margin: 20px;
+  }
+  .socail-media img:hover{
+      color: hsl(0, 0%, 100%);
+  }
