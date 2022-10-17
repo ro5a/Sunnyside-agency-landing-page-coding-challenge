@@ -211,9 +211,10 @@ header .text .arrow{
 }
 .section1 .texxt{
     
-    padding: 40px 0px 40px 40px;
+    padding: 40px 20px 40px 20px;
     margin: auto;
 }
+
 .section1 .texxt h2{
     font-family:francesbold;
     color: hsl(212, 27%, 19%);
@@ -237,11 +238,12 @@ header .text .arrow{
 
 }
 .section1 img{
-    width: 632px;
+    width: 50%;
     height: auto;
    
 }
-@media(max-width:675px)
+
+@media(max-width:877px)
 {
     .section1 img{
         width:100% ;
@@ -250,21 +252,20 @@ header .text .arrow{
     }
 }
 
-@media(max-width:675px)
+@media(max-width:877px)
 {
     .brand
     {
         flex-direction: column;
     }
-    .brand .texxt,
     .brand .texxt
     {
-        order: 2;
+        order: 1;
         text-align: center;
     }
     .brand .section1 img
     {
-        order: 1;
+        order: 2;
         
     }
     
@@ -276,7 +277,7 @@ header .text .arrow{
     
 }
 .section2 .texxt{
-    padding: 40px 0px 40px 40px;
+    padding: 40px 20px 40px 20px;
     margin: auto;
 }
 .section2 .texxt h2{
@@ -289,6 +290,7 @@ header .text .arrow{
     color: hsl(232, 10%, 55%);
     line-height: 1.8;
 }
+
 .section2 .texxt a{
     font-family:francesbold;
     color: hsl(212, 27%, 19%);
@@ -301,12 +303,12 @@ header .text .arrow{
 }
 
 .section2 img{
-    width: 632px;
+    width: 50%;
     height: auto;
    
 
 }
-@media(max-width:675px)
+@media(max-width:877px)
 {
     .section2 img{
         width:100% ;
@@ -315,10 +317,10 @@ header .text .arrow{
     }
 }
 .section3 img{
-    width: 632px;
+    width: 100%;
     height: auto;
 }
-@media(max-width:675px)
+@media(max-width:877px)
 {
     .section3 img
     {
@@ -334,7 +336,7 @@ header .text .arrow{
 .section3 .photo2{
     position: relative;
 }
-@media(max-width:675px)
+@media(max-width:877px)
 {
     .section3
     {
@@ -350,6 +352,43 @@ header .text .arrow{
     font-size: 18px;
     padding: 50px;
     color:hsl(167, 40%, 24%);
+  }
+  @media(max-width:1030px)
+  {
+      .center
+      {
+          font-size: 18px;
+          top: 40%;
+          padding: 40px;
+      }
+ 
+  }
+  @media(max-width:877px)
+  {
+      .center
+      {
+          font-size: 15px;
+          top: 40%;
+          padding: 40px;
+      }
+  }
+  @media(max-width:407px)
+  {
+      .center
+      {
+          font-size: 13px;
+          top: 40%;
+          padding: 40px;
+      }
+  }
+  @media(max-width:369px)
+  {
+      .center
+      {
+          font-size: 13px;
+          top: 40%;
+          padding: 20px 0px 20px 0px;
+      }
   }
   .center h2{
     font-family:francesbold;
@@ -369,6 +408,44 @@ header .text .arrow{
     color: hsl(198, 62%, 26%);
    
   }
+  @media(max-width:877px)
+{
+    .center2
+    {
+        font-size: 15px;
+        top: 40%;
+        padding: 40px;
+    }
+}
+@media(max-width:407px)
+{
+    .center2
+    {
+        font-size: 13px;
+        top: 40%;
+        padding: 40px;
+    }
+}
+@media(max-width:369px)
+{
+    .center2
+    {
+        font-size: 13px;
+        top: 40%;
+        padding: 20px 0px 20px 0px;
+    }
+}
+
+@media(max-width:1030px)
+{
+    .center2
+    {
+        
+        top: 40%;
+       
+    }
+
+}
   .center2 h2{
     font-family:francesbold;
   }
@@ -431,13 +508,27 @@ letter-spacing: 10px;
       height: auto;
       
   }
-  @media(max-width:675px)
+  @media(max-width:877px)
 {
-    .allimage img{
-        width:100% ;
+    .allimage .imge1{
+        width:50% ;
         height: auto;
         
     }
+    .allimage .imge2{
+        width:50% ;
+        height: auto;
+        
+    }
+}
+@media(max-width:1030px)
+{
+    .allimage img{
+        width:25% ;
+        height: auto;
+        
+    }
+  
 }
   footer{
       background-color: #90d4c5;
