@@ -440,7 +440,6 @@ header .text .arrow{
 {
     .center2
     {
-        
         top: 40%;
        
     }
@@ -504,7 +503,7 @@ letter-spacing: 10px;
       
   }
   .allimage img{
-      width:315px ;
+    width: calc(100% / 4);
       height: auto;
       
   }
